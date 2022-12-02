@@ -17,9 +17,9 @@ body{
     background-color: #CCD3D3;
     color: white;
     cursor: pointer;
-    padding: 1em;
+    padding: 1rem;
     border-radius: 40%;
-    font-size: 1em;
+    font-size: 1rem;
   }
   #top_btn:hover {
     background-color: #555;
@@ -28,7 +28,7 @@ body{
 /* Navigation Bar */
 
 #navbar{
-    height: 90vh;
+    height: 55rem;
     width: 100%;
     background-image: url(images/back.jpg);
     background-size: contain;
@@ -54,7 +54,7 @@ nav{
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 10px 25px;
+    padding: 0.6rem 1.25rem;
 }
 nav ul li a{
     color: #6B6C6C;
@@ -71,47 +71,46 @@ nav ul li a:hover{
 
 /* Introduction */
 
-#About{
-    height: 90vh;
+#Intro{
+    /* height: 90vh; */
     width: 100%;
     padding: 5vh 0vh;
-    margin-top: 15vh;
 }
-#intro img{
-    height: auto;
-    width: 430px;
-}
-#intro_text{
-    width: 550px;
-}
-#intro{
-    width: 1130px;
+#intro_content{
     max-width: 95%;
-    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     vertical-align: middle;
     justify-content: space-around;
+    padding-bottom: 10rem;
+}
+#Intro img{
+    height: auto;
+    width: 27rem;
+}
+#intro_text{
+    width: 34rem;
 }
 #intro_text h4{
     letter-spacing: 1px;
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 #intro_text h1{
     color: #EAD9BB;
     -webkit-text-stroke: 1px #7A6B76;
     letter-spacing: 1px;
-	margin: 10px 0px 8px;
-	font-size: 75px;
+	margin: 0.6rem 0rem 0.5rem;
+	font-size: 4.7rem;
 }
 #intro_text h5{
     color: #7A6B76;
     letter-spacing: 1px;
-	font-size: 25px;
-	margin-bottom: 40px;
+	font-size: 1.25rem;
+	margin-bottom: 2.5rem;
 }
 .courses{
-    margin-left: 20px;
+    margin-left: 1.5re,;
     font-size: 2vh;
 }
 #intro_text h3{
@@ -125,44 +124,45 @@ nav ul li a:hover{
 
 #Skills{
 	background: #FBFBF4;
-    height: 90vh;
+    /* height: 90vh; */
 	width: 100%;
 	padding: 5vh 0vh;
 }
 .title{
 	color: #EAD9BB;
     -webkit-text-stroke: 1px #7A6B76;
-	font-size: 75px;
-	width: 1130px;
-	margin: 30px auto;
+	font-size: 4.7rem;
+	width: 70.5rem;
+	margin: 2rem auto;
 	text-align: center;
 }
 .box{
 	display: flex;
+    flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	min-height: 400px;
 }
 .card{
-	height: 40vh;
-	width: 20vw;
-	padding: 20px 35px;
+	height: 20rem;
+	width: 15rem;
+	padding: 1.25rem 2.2rem;
 	background: #F4F3E7;
-	border-radius: 20px;
-	margin: 2vw;
+    border: 1rem solid transparent;
+	border-radius: 1.25rem;
+	margin: 1rem;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
 }
 .card_title{
     color: #7A6B76;
-	font-size: 23px;
-	margin-bottom: 15px;
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
 }
 .card_text{
-	font-size: 16px;
-	line-height: 27px;
-	margin-bottom: 25px;
+	font-size: 1rem;
+	line-height: 1.7rem;
+	margin-bottom: 1.5rem;
     position: absolute;
     bottom: 0;
 }
@@ -178,7 +178,7 @@ nav ul li a:hover{
 /* Achievements */
 
 #Achievements{
-    height: 130vh;
+    /* height: 130vh; */
     width: 100%;
     padding: 5vh 0vh;
 }
@@ -189,6 +189,18 @@ nav ul li a:hover{
     font-size: 1.5rem;
     margin-bottom: 3rem;
 }
+.achievements_text{
+	height: 20rem;
+	width: 15rem;
+	padding: 1.25rem 2.2rem;
+	background: #FBFBF4;
+    border: 1rem solid transparent;
+	border-radius: 1.25rem;
+	margin: 2vw;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
 #achievements_list{
     width: 60vw;
     max-width: 95%;
@@ -197,9 +209,9 @@ nav ul li a:hover{
     justify-content: space-around;
 }
 #achievements_list ul li{
-    padding-left: 80px;
-    padding-top: 20px;
-    padding-bottom: 80px;
+    padding-left: 5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 5rem;
     margin-left: 11rem;
     list-style: none;
     /* border: 2px solid #555; */
@@ -213,23 +225,11 @@ nav ul li a:hover{
     background-repeat: no-repeat;
 }
 
-.achievements_text{
-	height: 40vh;
-	width: 20vw;
-	padding: 20px 35px;
-	background: #FBFBF4;
-	border-radius: 20px;
-	margin: 2vw;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-}
-
 /* Contacts */
 
 #Contacts{
     background-color: #856757;
-    height: 40vh;
+    /* height: 40vh; */
     width: 100%;
     padding: 0.5vh 0vh;
 }
@@ -238,8 +238,8 @@ nav ul li a:hover{
     -webkit-text-stroke: 1.5px #7A6B76;
     text-shadow: 2px 2px 2px #7A6B76;
 	font-size: 2rem;
-	width: 1130px;
-	margin: 30px auto;
+	width: 70.5rem;
+	margin: 2rem auto;
 	text-align: center;
 }
 #contacts_text{
@@ -257,8 +257,50 @@ nav ul li a:hover{
 }
 .image_link{
     display: inline-block;
-    width: 3vw;
+    width: 2.5rem;
     height: auto;
     position: relative;
     justify-content: center;
+}
+
+/* About me */
+
+#About{
+    /* height: 90vh; */
+    width: 100%;
+    padding: 5vh 0vh;
+}
+#about_content{
+    max-width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-around;
+    padding-bottom: 10rem;
+}
+#About img{
+    height: auto;
+    width: 27rem;
+}
+#about_text h5{
+    color: #7A6B76;
+    letter-spacing: 1px;
+	font-size: 1.25rem;
+	margin-bottom: 2.5rem;
+}
+#about_text{
+    width: 34rem;
+}
+
+/* @media screen and (max-width: 1200px) {
+    html{
+        font-size: 10px;
+    }
+} */
+
+@media screen and (max-width: 801px) {
+    html{
+        font-size: 10px;
+    }
 }

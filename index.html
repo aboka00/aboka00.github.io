@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    
 </head>
 <body>
+    <!-- top button -->
     <button onclick="topFunction()" id="top_btn" title="Go to top">^</button>
+    <!-- Navigation Bar -->
     <div id="navbar">
         <nav>
             <h2 id="logo">Portfolio</h2>
             <ul>
-                <li><a href="#About">About me</a></li>
+                <li><a href="#Intro">Introduction</a></li>
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Achievements">Achievements</a></li>
+                <li><a href="pages/about.html">About me</a></li>
                 <li><a href="#Contacts">Contacts</a></li>
             </ul>
         </nav>
     </div>
-    <section id="About">
-        <div id="intro">
+    <!-- Introduction -->
+    <section id="Intro">
+        <div id="intro_content">
             <img src="images/me.jpeg" alt="my photo">
             <div id="intro_text">
                 <h4>Hello, my name is</h4>
@@ -41,6 +44,7 @@
             </div>
         </div>
     </section>
+    <!-- Skills -->
     <div id="Skills">
         <h2 class="title">Skills</h2>
         <div class="box">
@@ -76,6 +80,7 @@
             </div>
         </div>
     </div>
+    <!-- Achievements -->
     <div id="Achievements">
         <h2 class="title">Achievements</h2>
         <div class="box">
@@ -101,6 +106,7 @@
             </ul>
         </div>
     </div>
+    <!-- Contacts -->
     <footer id="Contacts">
         <h2 id="contacts_title">Abylay Zhanat</h2>
         <p id="contacts_text">
@@ -110,7 +116,6 @@
             <a href="https://www.instagram.com/abylay.zhanat/"><img src="images/insta.png" alt="insta" class="image_link"></a>
             <a href="https://github.com/aboka00"><img src="images/github.png" alt="github" class="image_link"></a>
         </p>
-        
     </footer>
     <script src="main.js"></script>
 </body>
