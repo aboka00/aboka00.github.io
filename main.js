@@ -18,10 +18,9 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-const hamburger = document.querySelector("#hamburger");
-const navMenu = document.querySelector("#nav_menu");
+const menuHamburger = document.querySelector(".menu-hamburger")
+const navLinks = document.querySelector(".nav-links")
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+menuHamburger.addEventListener("click", ()=> {
+  navLinks.classList.toggle("mobile-menu")
 })

@@ -11,9 +11,9 @@
     <!-- top button -->
     <button onclick="topFunction()" id="top_btn" title="Go to top">^</button>
     <!-- Navigation Bar -->
-    <div id="navbar">
-        <nav>
-            <h2 id="logo">Portfolio</h2>
+    <nav class="navbar">
+        <h2 class="logo">Portfolio</h2>
+        <div class="nav-links">
             <ul>
                 <li><a href="#Intro">Introduction</a></li>
                 <li><a href="#Skills">Skills</a></li>
@@ -21,8 +21,10 @@
                 <li><a href="pages/about.html">About me</a></li>
                 <li><a href="#Contacts">Contacts</a></li>
             </ul>
-        </nav>
-    </div>
+        </div>
+        <img src="/images/menu.png" alt="menu" class="menu-hamburger">
+    </nav>
+    <header></header>
     <!-- Introduction -->
     <section id="Intro">
         <div id="intro_content">
@@ -98,12 +100,16 @@
                 </p>
             </div>
         </div>
+        <h5 class="subtitle">Certificates:</h5>
         <div id="achievements_list">
-            <h5 class="subtitle">Certificates:</h5>
-            <ul>
-                <li id="b1">For teaching children with mental handicap (02/2018 - 04/2018)</li>
-                <li id="b2">For volunteering (09/2018 - Present)</li>
-            </ul>
+            <div>
+                <img src="/images/handicap.jpg" alt="handicap">
+                <p>For teaching children with mental handicap (02/2018 - 04/2018)</p>
+            </div>
+            <div>
+                <img src="/images/volunteer.png" alt="volunteer">
+                <p>For volunteering (09/2018 - Present)</p>
+            </div>
         </div>
     </div>
     <!-- Contacts -->
