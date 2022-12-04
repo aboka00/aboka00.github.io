@@ -63,14 +63,14 @@ header{
     -webkit-text-stroke: 1px #7A6B76;
     text-shadow: 2px 2px 2px #7A6B76;
 }
-.navbar .nav-links ul{
+.navbar .nav_links ul{
     display: flex;
 }
-.navbar .nav-links ul li{
+.navbar .nav_links ul li{
     list-style: none;
     margin: 20px 25px;
 }
-.navbar .menu-hamburger{
+.navbar .hamburger{
     display: none;
     position: absolute;
     top: 50px;
@@ -79,58 +79,13 @@ header{
     border-radius: 3px;
     cursor: pointer;
 }
-.navbar .menu-hamburger:hover{
+.navbar .hamburger:hover{
     background-color: #FBFBF4;
-}
-@media screen and (max-width: 950px){
-    .navbar{
-        padding: 0;
-    }
-    .navbar .logo{
-        position: absolute;
-        top: 50px;
-        left: 50px;
-    }
-    .navbar a{
-        color: #FBFBF4;
-    }
-    .navbar a:hover{
-        color: #7A6B76;
-    }
-    .navbar .menu-hamburger{
-        display: block;
-    }
-    .nav-links{
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(8px);
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-    }
-    .nav-links.mobile-menu{
-        margin-left: 0;
-    }
-    .nav-links ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar .nav-links ul li{
-        margin: 25px 0;
-        font-size: 1.2em;
-    }
 }
 
 /* Introduction */
 
 #Intro{
-    /* height: 90vh; */
     width: 100%;
     padding: 5vh 0vh;
 }
@@ -182,15 +137,14 @@ header{
 
 #Skills{
 	background: #FBFBF4;
-    /* height: 90vh; */
 	width: 100%;
 	padding: 5vh 0vh;
+    padding-bottom: 10rem;
 }
 .title{
 	color: #EAD9BB;
     -webkit-text-stroke: 1px #7A6B76;
 	font-size: 4.7rem;
-	/* width: 70.5rem; */
 	margin: 2rem auto;
 	text-align: center;
 }
@@ -199,11 +153,14 @@ header{
     flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+    gap: 1rem;
+    max-width: 95%;
+    margin: auto;
 }
 .card{
 	height: 20rem;
 	width: 15rem;
-	padding: 1.25rem 2.2rem;
+	padding: 1.25rem;
 	background: #F4F3E7;
     border: 1rem solid transparent;
 	border-radius: 1.25rem;
@@ -236,7 +193,6 @@ header{
 /* Achievements */
 
 #Achievements{
-    /* height: 130vh; */
     width: 100%;
     padding: 5vh 0vh;
 }
@@ -245,12 +201,13 @@ header{
     color: #7A6B76;
     letter-spacing: 1px;
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
 }
 .achievements_text{
 	height: 20rem;
 	width: 15rem;
-	padding: 1.25rem 2.2rem;
+	padding: 1.25rem;
 	background: #FBFBF4;
     border: 1rem solid transparent;
 	border-radius: 1.25rem;
@@ -260,16 +217,21 @@ header{
 	text-align: center;
 }
 #achievements_list{
-    /* width: 60vw; */
     max-width: 95%;
-    margin: 0 auto;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
+    gap: 5rem;
 }
-.achievement_row img{
+.bullet {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 2rem;
+}
+.bullet img{
+    padding-top: 0.4rem;
     height: 4rem;
     width: auto;
 }
@@ -278,7 +240,6 @@ header{
 
 #Contacts{
     background-color: #856757;
-    /* height: 40vh; */
     width: 100%;
     padding: 0.5vh 0vh;
 }
@@ -287,7 +248,6 @@ header{
     -webkit-text-stroke: 1.5px #7A6B76;
     text-shadow: 2px 2px 2px #7A6B76;
 	font-size: 2rem;
-	/* width: 70.5rem; */
 	margin: 2rem auto;
 	text-align: center;
 }
@@ -316,9 +276,9 @@ header{
 /* About me */
 
 #About{
-    /* height: 90vh; */
     width: 100%;
     padding: 5vh 0vh;
+    padding-top: 20vh;
 }
 #about_content{
     max-width: 95%;
@@ -326,12 +286,13 @@ header{
     flex-wrap: wrap;
     align-items: center;
     vertical-align: middle;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3rem;
     padding-bottom: 10rem;
 }
 #About img{
     height: auto;
-    width: 27rem;
+    width: 35rem;
 }
 #about_text h5{
     color: #7A6B76;
@@ -343,14 +304,52 @@ header{
     width: 34rem;
 }
 
-/* @media screen and (max-width: 1200px) {
-    html{
-        font-size: 10px;
-    }
-} */
-
 @media screen and (max-width: 801px) {
     html{
-        font-size: 10px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 950px){
+    .navbar{
+        padding: 0;
+    }
+    .navbar .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .navbar a{
+        color: #FBFBF4;
+    }
+    .navbar a:hover{
+        color: #7A6B76;
+    }
+    .navbar .hamburger{
+        display: block;
+    }
+    .nav_links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+    }
+    .nav_links.mobile-menu{
+        margin-left: 0;
+    }
+    .nav_links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav_links ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
     }
 }
